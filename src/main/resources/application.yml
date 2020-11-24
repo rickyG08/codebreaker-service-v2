@@ -4,10 +4,11 @@ spring:
       resourceserver:
         jwt:
           issuer-uri: https://accounts.google.com
-          client-id: 344482862092-366uphlltbp291h63k5bnbcdfs514a4b.apps.googleusercontent.com
+          client-id: 1077960860414-0p1708lmgk0djmoatt6tcrjkvb9vgkas.apps.googleusercontent.com
   datasource:
     url: jdbc:derby:codebreaker_db;create=true;collation=TERRITORY_BASED:PRIMARY
   jpa:
+    database-platform: org.hibernate.dialect.DerbyDialect
     hibernate:
       ddl-auto: update
 #    properties:
